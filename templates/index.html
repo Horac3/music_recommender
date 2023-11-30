@@ -1,0 +1,29 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommender</title>
+</head>
+<body>
+    <h1>Welcome to the Music Recommender!</h1>
+    <form action="/recommend" method="post">
+        <label for="genre">Select your preferred genre:</label>
+        <select id="genre" name="genre">
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Hip Hop">Hip Hop</option>
+        </select>
+        <br>
+        <label for="feedback">Did you like the recommendation?</label>
+        <input type="radio" id="yes" name="feedback" value="yes" checked>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="feedback" value="no">
+        <label for="no">No</label>
+        <br>
+        <input type="submit" value="Get Recommendation">
+    </form>
+</body>
+</html>
